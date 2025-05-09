@@ -1,0 +1,16 @@
+password = "Fmighty"
+Enter_password = ""
+password_count = 0
+password_limit = 3
+out_of_trial = False
+
+while Enter_password != password and not(out_of_trial):
+    if password_count < password_limit:
+        Enter_password = input("Enter Password: ")
+        password_count += 1
+    else:
+         out_of_trial = True
+if out_of_trial:
+    print("SORRY, Access Denied🚷")
+else:
+    print("SUCCESSFULLY LOGIN✅")
